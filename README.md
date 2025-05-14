@@ -1,8 +1,5 @@
 # ✨ Full Stack Realtime Chat App ✨
-
-![Demo App](/frontend/public/screenshot-for-readme.png)
-
-[Video Tutorial on Youtube](https://youtu.be/ntKkVrQqBYY)
+ 
 
 Highlights:
 
@@ -29,14 +26,3 @@ CLOUDINARY_API_SECRET=...
 NODE_ENV=development
 ```
 
-### Build the app
-
-```shell
-npm run build
-```
-
-### Start the app
-
-```shell
-npm start
-```
