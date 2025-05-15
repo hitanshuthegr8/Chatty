@@ -1,8 +1,10 @@
 import { config } from "dotenv";
+config(); // Load environment variables
+
+console.log("Loaded MONGODB_URI:", process.env.MONGODB_URI); // Debugging log
+
 import { connectDB } from "../lib/db.js";
 import User from "../models/user.model.js";
-
-config();
 
 const seedUsers = [
   // Female Users
@@ -102,7 +104,7 @@ const seedUsers = [
 
 const seedDatabase = async () => {
   try {
-    await connectDB();
+    await connectDB(); // Ensure MONGODB_URI is used correctly
 
     await User.insertMany(seedUsers);
     console.log("Database seeded successfully");
