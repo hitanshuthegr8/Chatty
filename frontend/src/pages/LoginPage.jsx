@@ -3,7 +3,7 @@ import { useAuthStore } from "../store/useAuthStore";
 import AuthImagePattern from "../components/AuthImagePattern";
 import { Link } from "react-router-dom";
 import { Eye, EyeOff, Loader2, Lock, Mail, MessageSquare } from "lucide-react";
-
+// import { toast } from "react-hot-toast";
 const LoginPage = () => {
   const [showPassword, setShowPassword] = useState(false);
   const [formData, setFormData] = useState({
@@ -11,7 +11,7 @@ const LoginPage = () => {
     password: "",
   });
   const { login, isLoggingIn } = useAuthStore();
-
+//   const { login, isLoggingIn } = useAuthStore();
   const handleSubmit = async (e) => {
     e.preventDefault();
     login(formData);
@@ -55,7 +55,6 @@ const LoginPage = () => {
                 />
               </div>
             </div>
-
             <div className="form-control">
               <label className="label">
                 <span className="label-text font-medium">Password</span>
@@ -96,7 +95,7 @@ const LoginPage = () => {
               )}
             </button>
           </form>
-
+//           {/* Forgot Password Link */}
           <div className="text-center">
             <p className="text-base-content/60">
               Don&apos;t have an account?{" "}
@@ -107,7 +106,7 @@ const LoginPage = () => {
           </div>
         </div>
       </div>
-
+//       {/* Divider */}
       {/* Right Side - Image/Pattern */}
       <AuthImagePattern
         title={"Welcome back!"}

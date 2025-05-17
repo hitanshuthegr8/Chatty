@@ -52,7 +52,7 @@ const SignUpPage = () => {
               <p className="text-base-content/60">Get started with your free account</p>
             </div>
           </div>
-
+// {/* Logo */}
           <form onSubmit={handleSubmit} className="space-y-6">
             <div className="form-control">
               <label className="label">
@@ -71,7 +71,7 @@ const SignUpPage = () => {
                 />
               </div>
             </div>
-
+// {/* Full Name */}
             <div className="form-control">
               <label className="label">
                 <span className="label-text font-medium">Email</span>
@@ -89,7 +89,7 @@ const SignUpPage = () => {
                 />
               </div>
             </div>
-
+// {/* Email */}
             <div className="form-control">
               <label className="label">
                 <span className="label-text font-medium">Password</span>
@@ -118,7 +118,7 @@ const SignUpPage = () => {
                 </button>
               </div>
             </div>
-
+                    // {/* Password Confirmation */}
             <button type="submit" className="btn btn-primary w-full" disabled={isSigningUp}>
               {isSigningUp ? (
                 <>
@@ -141,7 +141,7 @@ const SignUpPage = () => {
           </div>
         </div>
       </div>
-
+// {/* left side */}
       {/* right side */}
 
       <AuthImagePattern
